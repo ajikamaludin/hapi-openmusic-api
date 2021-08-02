@@ -23,7 +23,6 @@ class CacheService {
   }
 
   get(key) {
-    console.log('halo');
     return new Promise((resolve, reject) => {
       this._client.get(key, (error, reply) => {
         if (error) {
